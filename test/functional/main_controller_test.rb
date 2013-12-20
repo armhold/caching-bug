@@ -22,7 +22,8 @@ class MainControllerTest < ActionController::TestCase
     check_cache_header
   end
 
-  # this test will fail because "first run" has already run
+  # this test will fail because "first run" has already run, and failed to save the Cache-Control header
+  # with the cached data.
   test "second run" do
     check_cache_header
   end
